@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>dom-html</title>
+		<script type="text/javascript">
+			document.write("sssss");
+		</script>
+	</head>
+	<body>
+		<div id="app">
+			啦啦啦啦			
+		</div>
+		<div class="ppp">
+			hhhhh
+		</div>
+		<ul class="lll">
+			<li>憨憨</li>
+		</ul>
+		
+		<script type="text/javascript">
+			document.getElementById("app").innerHTML="哈哈哈哈哈"//通过id查找替换
+			//查找标签替换内容   classname类似
+			// function change(elements,concent){
+			//      var len = elements.length
+			// 	 for (var i=0;i<len;i++)
+			// 	 {
+			// 		 elements[i].innerHTML=concent;
+			// 	 }
+			// }
+			// var p1 =document.getElementsByTagName("li");
+			// change(p1,"傻子");
+			//var p2 =document.getElementsByClassName("ppp");
+			//change(p2,"kkkkkkk");
+			var creat =document.createElement("li")
+			creat.innerHTML="傻子"
+			document.querySelector(".lll").appendChild(creat)//在后面插入
+			var creattwo = document.createElement("li")
+			creattwo.innerHTML="我不管你就是"
+			var a =document.querySelector(".lll")
+			a.insertBefore(creattwo,a.secondChild)//指定插入
+		</script>
+	</body>
+</html>

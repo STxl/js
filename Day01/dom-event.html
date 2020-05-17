@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Event事件</title>
+		<style type="text/css">
+			#box{
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+				line-height: 20px;
+				text-align: center;
+				color: black;
+			}
+			#main{
+				width: 100px;
+				height: 100px;
+				background-color: black;
+				line-height: 20px;
+				text-align: center;
+				color: wheat;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" onclick="changebox()">
+			点一下，叫你点就点，磨磨唧唧的	
+		</div>
+		<div id="main" onmouseover="changemain()" >
+			不点就把鼠标划过来一下
+		</div>
+		<script type="text/javascript">
+			function changebox(){
+				alert("叫你点就点，你是憨憨吗")
+			}
+			function changemain(){
+				document.getElementById("main").style.backgroundColor='pink'
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>dom-css</title>
+	</head>
+	<body>
+		<div id="app">
+			啦啦啦啦			
+		</div>
+		<div class="ppp">
+			hhhhh
+		</div>
+		<p>陈茜梦是憨憨</p>
+		<script type="text/javascript">
+			document.getElementById("app").style.color='red';
+			//改变单个css样式
+			// function changecss(elements,concent){
+   //              var len = elements.length;
+			// 	for(var i=0;i<len;i++){
+			// 		elements[i].style.color=concent
+			// 	}
+			// }
+			// var p1 = document.getElementsByClassName("ppp");
+			// changecss(p1,"blue");
+			// var p2 = document.getElementsByTagName("p");
+			// changecss(p2,"pink");
+			
+			//改变多个样式
+			function changecss(elements,cssname,cssvalue){
+				var len = elements.length;
+				for(var i=0;i<len;i++){
+			     	elements[i].style[cssname]=cssvalue
+			    }
+			}
+			var p1 = document.getElementsByClassName("ppp");
+			 changecss(p1,"color","blue");
+			var p2 = document.getElementsByTagName("p");
+			 changecss(p2,"background","orange");
+		</script>
+	</body>
+</html>

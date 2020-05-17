@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>正则表达式</title>
+		<script type="text/javascript">
+			var a = /1/;
+			var b =new RegExp("abc");
+			var c= /abc/g;
+			var str1= "abc12345";
+			var str2= "xyz12345";
+			var str3= "abc132abc46abc";
+			document.write(a+"<br>");
+			document.write(b+"<br>");
+			document.write(b.source+"<br>");//返回正则表达式的字符串形式
+			console.log(Object.prototype.toString.call(a));//查询类
+			alert(Object.prototype.toString.call(b));	
+			document.write(b.test(str1)+"<br>");
+			document.write(b.test(str2)+"<br>");//检索字符串中指定值匹配成功返回true 失败false
+            document.write(b.exec(str1)+"<br>");
+		    document.write(b.exec(str2)+"<br>");//检索并返回第一次字符串中值  没有则返回null
+			document.write(str3.match(c)+"<br>");//检索并返回所有字符串中值  没有则返回null
+			document.write(str3.search(c)+"<br>");//返回第一次匹配到的下标  没有返回-1
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
