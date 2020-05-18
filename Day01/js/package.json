@@ -1,0 +1,12 @@
+{
+    "name": "js",
+    "version": "1.0.5",
+    "description": "vue admin project",
+    "author": "taylor <709161610@qq.com>",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0"
+    }
+}
